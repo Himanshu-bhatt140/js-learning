@@ -5,7 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
 </head>
-<body>
+<body style="background-color: #313131 !important;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    <button id="reset">Reset</button>
+
+    <div class=`${color}`></div>
+
     
-</body>
+
+    <!-- Lexical Scoping -->
+    <!-- <script>
+        function outer(){
+            var username= "himanshu"
+            function inner() {
+                console.log("inner username", username)
+            }
+            inner()
+        }
+        outer();
+    </script> -->
+    <!-- Closure -->
+     <!-- <script>
+        function outerClosure(){
+            let user= "himanshu"
+            function innerClosure(){
+                console.log("inner Closure", user)
+            }
+            return innerClosure();
+        }
+        const test = outerClosure();
+        test;
+     </script> -->
+     <!-- Practical eg -->
+      <!-- <script>
+        // document.getElementById("orange").onclick=function(){
+        //     document.body.style.backgroundColor="orange"
+        // }
+        // document.getElementById("green").onclick=function(){
+        //     document.body.style.backgroundColor="green"
+        // }
+        function clickHandler(color){
+          return  function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+        document.getElementById("orange").onclick = clickHandler("orange")
+        document.getElementById("green").onclick = clickHandler("green")
+        document.getElementById("reset").onclick=function(){
+            document.body.style.removeProperty("background-color","initial")
+        }
+
+      </script> -->
+    <script src="./02_basics/arrayFunctions.js"></script>
+    
+    </body>
 </html>
