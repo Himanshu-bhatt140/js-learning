@@ -40,3 +40,9 @@ user.welcomeMsg()
 
 // Output
 // undefined
+
+const addTwo = (n1,n2) =>{
+    return n1+n2
+}
+
+console.log(addTwo(2,4));
