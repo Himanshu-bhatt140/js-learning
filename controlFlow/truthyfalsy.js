@@ -1,4 +1,4 @@
-const email =[]
+const email = []
 if (email) {
     // console.log("got user email");
 
@@ -14,9 +14,9 @@ if (email) {
 // "0","false"," ",[],{},function(){}
 
 // check if array is empthy or not
-if(email.length===0){
+if (email.length === 0) {
     // console.log(`array is empty`);
-    
+
 }
 
 // Nullish Coalescing operator (??) : null, undefined
