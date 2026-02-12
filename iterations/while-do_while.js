@@ -19,7 +19,13 @@ while(ar<arr.length){
 
 let score =1;
 do {
-    console.log(`score id ${score}`);
+    // console.log(`score id ${score}`);
     score ++
     
 } while (score<=10);
+
+
+let myArr =["hello","this","is","destructuring"]
+
+// const [hello,is,destructuring] = myArr
+// console.log(destructuring);
