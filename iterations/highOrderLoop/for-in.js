@@ -16,7 +16,7 @@ for(const key in myObj){
 // rb
 // swift
 for(const value in myObj){
-    console.log(myObj[value]);
+    // console.log(myObj[value]);
     
 }
 // Output
@@ -25,3 +25,25 @@ for(const value in myObj){
 // C++
 // ruby
 // swift by apple
+
+// for in loop works in arrays as well ublike for of also it will return the index,value,complete array
+
+const arr = [1,2,3,4,5,6]
+for (key in arr){
+    // console.log(key);
+    
+}
+
+// output
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+
+for(i in arr){
+    console.log(arr[i],i)
+    
+}
+
