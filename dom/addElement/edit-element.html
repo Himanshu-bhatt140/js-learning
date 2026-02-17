@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Elements</title>
 
 </head>
+
 <body style="background-color: #212121; color: #ffffff;">
-<ul class="language">
-    <li>Javscript</li>
-    <li>Cpp</li>
-</ul>
+    <ul class="language">
+        <li>Javscript</li>
+        <li>Cpp</li>
+        <li>Cpp</li>
+    </ul>
 
 
     <script>
         // Normal Function
-    function addLanguage(langName){
-        const addList = document.createElement('li');
-        addList.innerHTML=`${langName}`;
-        document.querySelector(".language").appendChild(addList)
-    }
-    // addLanguage('Python')
-    // Optimized Add langugae 
-    function optimizedLanguage(langName){
-        const li = document.createElement("li");
-        li.appendChild(document.createTextNode(langName))
-        document.querySelector(".language").appendChild(li)
-    }
-    optimizedLanguage("Swift")
+        function addLanguage(langName) {
+            const addList = document.createElement('li');
+            addList.innerHTML = `${langName}`;
+            document.querySelector(".language").appendChild(addList)
+        }
+        // addLanguage('Python')
+        // Optimized Add langugae 
+        function optimizedLanguage(langName) {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector(".language").appendChild(li)
+        }
+        optimizedLanguage("Swift")
 
-    // Edit
-    const editLi = document.querySelector("li:nth-child(2)");
-    // editLi.appendChild(document.createTextNode(" & SW"))
-    // document.querySelector('.language').replaceWith(editLi)
-    const newEditLi = document.createElement("li")
-    newEditLi.textContent = "Golang"
-    editLi.replaceWith(newEditLi)
-
-
+        // Edit
+        const editLi = document.querySelector("li:nth-child(2)");
+        // editLi.appendChild(document.createTextNode(" & SW"))
+        // document.querySelector('.language').replaceWith(editLi)
+        const newEditLi = document.createElement("li")
+        newEditLi.textContent = "Golang"
+        editLi.replaceWith(newEditLi)
 
 
+        // Edit 
+        // const editTwo = document.querySelector('li:first-child');
+        // editTwo.outerHTML = '<li>Typescript</p>'
+
+
+        // Remove
+        const removeLang = document.querySelector("li:last-child");
+        removeLang.remove()
 
 
 
@@ -56,6 +65,7 @@
 
 
     </script>
-    
+
 </body>
+
 </html>
