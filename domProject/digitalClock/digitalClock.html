@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        input,
+        button {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        button {
+            background: #ffffff;
+            color: #212121;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-screen flex justify-center items-center">
+        <form action="">
+            <label for="clock">Time</label>
+            <div class="bg-orange-500 text-white font-medium px-3 py-2 rounded-sm">
+                <p id="clock" class="text-white"></p>
+            </div>
+           
+        </form>
+    </div>
+
+
+    <script src="./digitalClock.js"></script>
+</body>
+
+</html>
