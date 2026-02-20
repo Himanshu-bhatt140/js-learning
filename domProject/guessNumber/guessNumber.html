@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The number</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        input,
+        button {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        button {
+            background: #ffffff;
+            color: #212121;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-screen ">
+        <div class="flex justify-center items-center">
+            <div id="wrapper">
+                <h1>Number Gessing Game</h1>
+                <p>Try and guess a random number between 1 & 100</p>
+            </div>
+
+        </div>
+        <br>
+        <div class="flex flex-col justify-center items-center">
+
+            <form action="">
+                <label for="guessField" id="guess"></label>
+                <input type="text" id="guessField" class="guessField">
+                <button id="guessSubmit" class="guessSubmit">Submit Guess</button>
+                <!-- <div class="bg-orange-500 text-white font-medium px-3 py-2 rounded-sm">
+                    <p id="clock" class="text-white"></p>
+                    <p>You Have10 attmepts to guess the right number  </p>
+                </div>
+                -->
+            </form>
+
+            <div class="resultParas">
+                <p>Previous Guesses: <span class="guesses"></span></p>
+                <p>GUesses Remaining <span class="lastResult">10</span></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./guessNumber.js"></script>
+</body>
+
+</html>
