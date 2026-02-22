@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body style="background-color: #212121;">
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div id="lists" class="grid grid-cols-5 gap-3 mt-5">
+            <div class="bg-gray-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Gray
+            </div>
+            <div class="bg-red-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Red
+            </div>
+            <div class="bg-blue-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Blue
+            </div>
+            <div class="bg-green-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Green
+            </div>
+            <div class="bg-yellow-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Yellow
+            </div>
+            <div class="bg-pink-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Pink
+            </div>
+            <div class="bg-purple-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Purple
+            </div>
+            <div class="bg-orange-500 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Orange
+            </div>
+            <div class="bg-red-800 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Maroon
+            </div>
+            <div class="bg-green-800 px-3 py-2 rounded-sm  text-white cursor-pointer text-center listItems">
+                Dark Green
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const lists = document.querySelector('#lists')
+        lists.addEventListener('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if(e.target.classList.contains('listItems')){
+                console.log(e.target.innerHTML);
+                
+            }
+
+
+        })
+    </script>
+</body>
+
+</html>
