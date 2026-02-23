@@ -1,0 +1,13 @@
+Javascript
+- It is a synchronous => means code wil execute one by one by default
+- It is a single threaded language means it will execute in a single thread and slow compare with other language by default
+
+Execution Context
+- It execute one line of code at a time
+- Each operation will wait for the last one until it is completed to execute
+
+Blocking Code
+- Block the flow of program 
+
+Non Blocking code
+- Does not block the code
